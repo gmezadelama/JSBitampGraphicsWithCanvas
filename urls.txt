@@ -1,0 +1,3 @@
+bezier paths
+https://www.i-programmer.info/programming/113-javascript/14147-javascript-canvas-bezier-curves.html?start=1
+https://www.i-programmer.info/programming/113-javascript/14147-javascript-canvas-bezier-curves.html?start=2
