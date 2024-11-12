@@ -1,22 +1,12 @@
 var c = document.getElementById("Canvas");
 var ctx = c.getContext("2d");
 
-var path1 = new Path2D();
-var x = 200;
-var y = 200;
-var r = 100;
-path1.moveTo(x, y + r);
-var inc = 0.1;
-
-for (let t = 0; t < 2 * Math.PI; t += inc) {
-  path1.lineTo(x + r * Math.sin(t), y + r * Math.cos(t));
-}
-path1.closePath();
+var path1 = new Path2D("M50 50 L100 100");
+path1.moveTo(50, 50);
 ctx.stroke(path1);
 
-var path2 = new Path2D();
-var x2 = 500;
-var y2 = 200;
-var r2 = 100;
-path2.arc(x2, y2, r2, 0, 2 * Math.PI);
+var path2 = new Path2D("M50 200 Q75 150 100 200 T200 150");
 ctx.stroke(path2);
+
+var path3 = new Path2D("M50 400 C100 350 150 500 200 400 S250 350 300 400");
+ctx.stroke(path3);
